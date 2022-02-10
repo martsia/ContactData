@@ -30,7 +30,8 @@ class ContactsViewController: UITableViewController {
         cell.detailTextLabel?.text = contact.phoneNumber
         return cell
     }
-
+    // MARK: - Navigation
+    
     //Unwind segue
     @IBAction  func unwindToContactList(segue: UIStoryboardSegue) {
         guard let viewController = segue.source as?  AddContactViewController else { return }
@@ -39,4 +40,14 @@ class ContactsViewController: UITableViewController {
         contacts.append(contact)
         tableView.reloadData()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier ==  "contactDetailSegue" {
+            guard let viewController = segue.destination as? ContactDetailViewController else { return }
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let contact = contacts[indexPath.row]
+            viewController.contact = contact
+        }
+    }
+
 }

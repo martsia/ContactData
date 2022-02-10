@@ -24,6 +24,8 @@ class AddContactViewController: UIViewController {
     
     
     @IBAction func close(_ sender: UIButton) {
+        nameTextField.text = nil
+        phoneNumberTextField.text = nil
         performSegue(withIdentifier: "unwindToContactList", sender: self)
     }
     
