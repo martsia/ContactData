@@ -15,9 +15,19 @@
 		A35ECB5C27B4279400375019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35ECB5A27B4279400375019 /* LaunchScreen.storyboard */; };
 		A35ECB6427B42D3000375019 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35ECB6327B42D3000375019 /* ContactsViewController.swift */; };
 		A35ECB6627B42DBF00375019 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35ECB6527B42DBF00375019 /* AddContactViewController.swift */; };
-		A35ECB6827B4362600375019 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35ECB6727B4362600375019 /* Contact.swift */; };
 		A35ECB6A27B5567700375019 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35ECB6927B5567700375019 /* ContactDetailViewController.swift */; };
+		A3CDFD6428772CD500FE4D0B /* ContactDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CDFD6328772CD500FE4D0B /* ContactDataTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3CDFD6528772CD500FE4D0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A35ECB4127B4279200375019 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A35ECB4827B4279200375019;
+			remoteInfo = ContactData;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A35ECB4927B4279200375019 /* ContactData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactData.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,12 +40,20 @@
 		A35ECB5D27B4279400375019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A35ECB6327B42D3000375019 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		A35ECB6527B42DBF00375019 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
-		A35ECB6727B4362600375019 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		A35ECB6927B5567700375019 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		A3CDFD6128772CD500FE4D0B /* ContactDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CDFD6328772CD500FE4D0B /* ContactDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDataTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A35ECB4627B4279200375019 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CDFD5E28772CD500FE4D0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				A35ECB4B27B4279200375019 /* ContactData */,
+				A3CDFD6228772CD500FE4D0B /* ContactDataTests */,
 				A35ECB4A27B4279200375019 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				A35ECB4927B4279200375019 /* ContactData.app */,
+				A3CDFD6128772CD500FE4D0B /* ContactDataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,7 +92,6 @@
 				A35ECB5827B4279400375019 /* Assets.xcassets */,
 				A35ECB5A27B4279400375019 /* LaunchScreen.storyboard */,
 				A35ECB5D27B4279400375019 /* Info.plist */,
-				A35ECB5527B4279200375019 /* ContactData.xcdatamodeld */,
 			);
 			path = ContactData;
 			sourceTree = "<group>";
@@ -80,7 +99,7 @@
 		A35ECB6B27B56DA200375019 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A35ECB6727B4362600375019 /* Contact.swift */,
+				A35ECB5527B4279200375019 /* ContactData.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +122,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		A3CDFD6228772CD500FE4D0B /* ContactDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3CDFD6328772CD500FE4D0B /* ContactDataTests.swift */,
+			);
+			path = ContactDataTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +150,24 @@
 			productReference = A35ECB4927B4279200375019 /* ContactData.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A3CDFD6028772CD500FE4D0B /* ContactDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3CDFD6928772CD500FE4D0B /* Build configuration list for PBXNativeTarget "ContactDataTests" */;
+			buildPhases = (
+				A3CDFD5D28772CD500FE4D0B /* Sources */,
+				A3CDFD5E28772CD500FE4D0B /* Frameworks */,
+				A3CDFD5F28772CD500FE4D0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3CDFD6628772CD500FE4D0B /* PBXTargetDependency */,
+			);
+			name = ContactDataTests;
+			productName = ContactDataTests;
+			productReference = A3CDFD6128772CD500FE4D0B /* ContactDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -130,11 +175,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					A35ECB4827B4279200375019 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					A3CDFD6028772CD500FE4D0B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A35ECB4827B4279200375019;
 					};
 				};
 			};
@@ -152,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				A35ECB4827B4279200375019 /* ContactData */,
+				A3CDFD6028772CD500FE4D0B /* ContactDataTests */,
 			);
 		};
 /* End PBXProject section */
@@ -167,6 +217,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3CDFD5F28772CD500FE4D0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -174,7 +231,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A35ECB6827B4362600375019 /* Contact.swift in Sources */,
 				A35ECB6627B42DBF00375019 /* AddContactViewController.swift in Sources */,
 				A35ECB4D27B4279200375019 /* AppDelegate.swift in Sources */,
 				A35ECB6A27B5567700375019 /* ContactDetailViewController.swift in Sources */,
@@ -184,7 +240,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3CDFD5D28772CD500FE4D0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CDFD6428772CD500FE4D0B /* ContactDataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3CDFD6628772CD500FE4D0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A35ECB4827B4279200375019 /* ContactData */;
+			targetProxy = A3CDFD6528772CD500FE4D0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A35ECB5227B4279200375019 /* Main.storyboard */ = {
@@ -378,6 +450,42 @@
 			};
 			name = Release;
 		};
+		A3CDFD6728772CD500FE4D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.martakalichynska.ContactDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactData.app/ContactData";
+			};
+			name = Debug;
+		};
+		A3CDFD6828772CD500FE4D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.martakalichynska.ContactDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactData.app/ContactData";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -395,6 +503,15 @@
 			buildConfigurations = (
 				A35ECB6127B4279400375019 /* Debug */,
 				A35ECB6227B4279400375019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3CDFD6928772CD500FE4D0B /* Build configuration list for PBXNativeTarget "ContactDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CDFD6728772CD500FE4D0B /* Debug */,
+				A3CDFD6828772CD500FE4D0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
